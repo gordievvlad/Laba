@@ -20,7 +20,6 @@
 
 
 <!-- ABOUT THE PROJECT -->
-
 ## About The Project
 
 <h5>A web application uses a web service to store data and read it from a database.</h5>
@@ -33,7 +32,6 @@ The web application allows you to:
 
 
 <!--GETTING STARTED -->
-
 ## Getting Started
 
 <h5>To start and run a local copy, follow these simple steps.</h5>
@@ -50,7 +48,6 @@ The web application allows you to:
 
 
 <!-- USAGE EXAMPLES -->
-
 ## Usage
 
 <h5>Here you will see useful examples of how you can use the project.<br>
