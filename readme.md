@@ -34,22 +34,22 @@ The web application allows you to:
 <!--GETTING STARTED-->
 ## Getting Started
 
-<h5>To start and run a local copy, follow these simple steps.</h5>
+To start and run a local copy, follow these simple steps.
 
 ### Prerequisites
 
-<h5>Everything you need to use the software, and how to install them.
-<br>........</h5>
+Everything you need to use the software, and how to install them.
+<br>........
 
 ### Installation
 
-<h5>The installation process will be shown here.
-<br>........</h5>
+The installation process will be shown here.
+<br>........
 <!--/GETTING STARTED-->
 
 <!--USAGE EXAMPLES-->
 ## Usage
 
-<h5>Here you will see useful examples of how you can use the project.<br>
-<br>For more examples, please refer to the documentation</h5>
+Here you will see useful examples of how you can use the project.<br>
+<br>For more examples, please refer to the documentation
 <!--/USAGE EXAMPLES-->
