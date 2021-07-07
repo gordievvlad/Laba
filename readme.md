@@ -1,7 +1,5 @@
 <h2 align="center">Web application for managing departments and employees</h2>
 
-___________
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -20,7 +18,6 @@ ___________
   </ol>
 </details>
 
-______
 
 <!-- ABOUT THE PROJECT -->
 
@@ -34,7 +31,6 @@ The web application allows you to:
   to search for employees born on a certain date or in the period between dates
 * change (add/edit/delete) the above data
 
-_______
 
 <!--GETTING STARTED -->
 
@@ -52,7 +48,6 @@ _______
 <h5>The installation process will be shown here.
 <br>........</h5>
 
-_______
 
 <!-- USAGE EXAMPLES -->
 
