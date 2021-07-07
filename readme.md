@@ -22,7 +22,7 @@
 <!--ABOUT THE PROJECT-->
 ## About The Project
 
-<h5>A web application uses a web service to store data and read it from a database.</h5>
+A web application uses a web service to store data and read it from a database.
 The web application allows you to:
 
 * displaying a list of departments and the average salary (calculated automatically) for these departments
