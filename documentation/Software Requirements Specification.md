@@ -45,8 +45,8 @@ Application should provide:
 <!--/VISION-->
 
 <!--DEPARTMENT-->
-## 2. Department
-### 2.1 Display list of department
+## Department
+### Display list of department
 
 The mode is designed to view the list of department.
 
@@ -61,7 +61,7 @@ The list displays the following columns:
 * ID – unique department number;
 * Nubmer of employees - the number of employees in this department
 * The average salary ($) - average salary of all employees of the department
-### 2.2 Add department
+### Add department
 
 <b>Main scenario:</b>
 * Administrator clicks the “Add” button in the department list view mode;
@@ -85,7 +85,7 @@ The list displays the following columns:
 <b>When adding a department, the following details are entered:</b>
 * Name department - name department
 * Add employee - adding department employees(optional field)
-### 2.3 Edit department
+### Edit department
 
 <b>Main scenario:</b>
 * Administrator clicks the “Edit” button in the department list view mode;
@@ -110,7 +110,7 @@ The list displays the following columns:
 * Name department - name department
 * Add employee - adding department employees(optional field)
 
-### 2.4 Removing the department
+### Removing the department
 
 <b>Main scenario:</b>
 * Administrator, while in the list of departments presses the "Delete" button in the selected department line;
@@ -131,8 +131,8 @@ The list displays the following columns:
 <!--/DEPARTMENT-->
 
 <!--EMPLOYEE-->
-## 3. Employee
-### 3.1 Display list of employee
+## Employee
+### Display list of employee
 
 This mode is intended for viewing and editing the employees list
 
@@ -163,7 +163,7 @@ Pic. 3.1 View the Employee list.
 * If end date is blank, then filtering by start date only.
 * Updating data after selecting the filtering conditions is carried out by pressing the “Refresh” button.
 
-### 2.2 Add employee
+### Add employee
 
 <b>Main scenario:</b>
 * Administrator clicks the “Add” button in the employee list view mode;
@@ -192,7 +192,7 @@ Pic. 3.1 View the Employee list.
 * Specialization - skills that the employee has
 * Experience - work experience
 * Wages - employee's salary
-### 2.3 Edit employee
+### Edit employee
 
 <b>Main scenario:</b>
 * Administrator clicks the “Edit” button in the employee list view mode;
@@ -213,7 +213,7 @@ Cancel operation scenario:
 ![](edit_employee.jpg)
 <br>Pic. 3.3 Edit employee.
 
-### 2.4 Removing the employee
+### Removing the employee
 
 <b>Main scenario:</b>
 * The administrator, while in the list of employees mode, presses the "Delete" button in the selected client line;
