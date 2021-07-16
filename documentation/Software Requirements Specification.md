@@ -10,19 +10,19 @@
     <li>
       <a href="#department">Department</a>
       <ul>
-        <li><a href="#display list of department">Display list of department</a></li>
-        <li><a href="#add department">Add department</a></li>
-        <li><a href="#edit department">Edit department</a></li>
-        <li><a href="#removing the department">Removing the department</a></li>
+        <li><a href="#display-list-of-department">Display list of department</a></li>
+        <li><a href="#add-department">Add department</a></li>
+        <li><a href="#edit-department">Edit department</a></li>
+        <li><a href="#removing-the-department">Removing the department</a></li>
       </ul>
     </li>
     <li>
         <a href="#employee">Employee</a>
         <ul>
-        <li><a href="#display list of employee">Display list of employee</a></li>
-        <li><a href="#add employee">Add employee</a></li>
-        <li><a href="#edit employee">Edit employee</a></li>
-        <li><a href="#removing the employee">Removing the employee</a></li>
+        <li><a href="#display-list-of-employee">Display list of employee</a></li>
+        <li><a href="#add-employee">Add employee</a></li>
+        <li><a href="#edit-employee">Edit employee</a></li>
+        <li><a href="#removing-the-employee">Removing the employee</a></li>
         </ul>
     </li>
   </ol>
@@ -30,7 +30,7 @@
 <!--/TABLE OF CONTENTS-->
 
 <!--VISION-->
-## 1. Vision
+## Vision
 
 "Department and Employee Management" is a web application that allows an administrator to record information about a department and an employee.
 
