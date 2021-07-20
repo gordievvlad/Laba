@@ -155,6 +155,7 @@ The list displays the following columns:
 * Administrator confirms the removal of the department;
 * Record is deleted from database;
 * If department record is successfully deleted, then list of departments without deleted records is displaying.
+* For employees, the field in the "department" column will become empty
 
 ![](del_department.jpg)
 <br>Pic. 2.8 Delete department dialog.
@@ -192,24 +193,26 @@ This mode is intended for viewing and editing the employees list
 <b>Filtering by date:</b>
 * In the employee list view mode, the administrator sets a filter by date and clicks the update list button (to the right of the date input field).;
 * The application will show employees only during a certain period of the date of birth.
-* If an incorrect date range is specified, it outputs an empty table;
+* If an incorrect date range is specified, it displays an error message(pic. 3.2);
 * To reset the filter by date, click the reset button (to the right of the update button):
 
 <b>Restrictions:</b>
-* Start date of the period should be less then end date of the period;
+* Start date of the period should be less than end date of the period;
 * If start date is blank, then filtering by end date only.
 * If end date is blank, then filtering by start date only.
 * Updating data after selecting the filtering conditions is carried out by pressing the “Refresh” button.
 
+![](date_error.jpg)
+<br>Pic. 3.2 Incorrect date.
 ### Add employee
 
 <b>Main scenario:</b>
 * Administrator clicks the “Add” button in the employee list view mode;
-* Application displays form to enter employee data(pic. 3.2);
+* Application displays form to enter employee data(pic. 3.3);
 * Administrator enters employee data and presses “Save” button;
-* If any data is entered incorrectly, incorrect data messages are displayed(pic. 3.3);
+* If any data is entered incorrectly, incorrect data messages are displayed(pic. 3.4);
 * If entered data is valid, then record is adding to database;
-* If error occurs, then error message is displaying(pic. 3.4);
+* If error occurs, then error message is displaying(pic. 3.5);
 * If new employee record is successfully added, then list of employees with added records is displaying.
 
 <b>Cancel operation scenario:</b>
@@ -220,7 +223,7 @@ This mode is intended for viewing and editing the employees list
 * If the administrator selects the menu item "Department", "Employee", "Positions" or "Specialization", the data will not be saved to the database and the corresponding form with updated data will be opened.
 
 ![](add_employeee.jpg)
-<br>Pic. 3.2 Add employee.
+<br>Pic. 3.3 Add employee.
 
 <b>When adding a employee, the following details are entered:</b>
 * Name - first name and last name
@@ -233,19 +236,19 @@ This mode is intended for viewing and editing the employees list
 
 <b>If the data is entered incorrectly, it will display the corresponding error.</b>
 ![](add_error_employeee.jpg)
-<br>Pic. 3.3 Error when adding.
+<br>Pic. 3.4 Error when adding.
 
 ![](add_error_employeee1.jpg)
-<br>Pic. 3.4 Error when adding.
+<br>Pic. 3.5 Error when adding.
 ### Edit employee
 
 <b>Main scenario:</b>
 * Administrator clicks the “Edit” button in the employee list view mode;
-* Application displays form to enter employee data(pic. 3.5);
+* Application displays form to enter employee data(pic. 3.6);
 * Administrator enters employees data and presses “Save” button;
-* If any data is entered incorrectly, incorrect data messages are displayed(pic. 3.6);
+* If any data is entered incorrectly, incorrect data messages are displayed(pic. 3.7);
 * If entered data is valid, then edited data is added to database;
-* If error occurs, then error message is displaying(pic. 3.7);
+* If error occurs, then error message is displaying(pic. 3.8);
 * If employees record is successfully edited, then list of employees with added records is displaying.
 
 Cancel operation scenario:
@@ -256,14 +259,14 @@ Cancel operation scenario:
 * If the administrator selects the menu item "Department", "Employee", "Positions" or "Specialization", the data will not be saved to the database and the corresponding form with updated data will be opened.
 
 ![](edit_employeee.jpg)
-<br>Pic. 3.5 Edit employee.
+<br>Pic. 3.6 Edit employee.
 
 <b>If the data is entered incorrectly, it will display the corresponding error.</b>
 ![](edit_error_employee.jpg)
-<br>Pic. 3.6 Error when editing.
+<br>Pic. 3.7 Error when editing.
 
 ![](edit_error_employee1.jpg)
-<br>Pic. 3.7 Error when editing.
+<br>Pic. 3.8 Error when editing.
 ### Removing the employee
 
 <b>Main scenario:</b>
@@ -274,7 +277,7 @@ Cancel operation scenario:
 * If employee record is successfully deleted, then list of employees without deleted records is displaying.
 
 ![](del_employeee.jpg)
-<br>Pic. 3.8 Delete department dialog.
+<br>Pic. 3.9 Delete department dialog.
 
 <b>Cancel operation scenario:</b>
 * Administrator is in display mode of employees list and press “Delete” button;
@@ -368,6 +371,7 @@ The list displays the following columns:
 * Administrator confirms the removal of the position;
 * Record is deleted from database;
 * If position record is successfully deleted, then list of positions without deleted records is displaying.
+* For employees, the field in the "position" column will become empty
 
 ![](del_positionss.jpg)
 <br>Pic. 4.8 Delete position dialog.
@@ -463,6 +467,7 @@ The list displays the following columns:
 * Administrator confirms the removal of the specialization;
 * Record is deleted from database;
 * If specialization record is successfully deleted, then list of specialization without deleted records is displaying.
+* For employees, the field in the "specialization" column will become empty
 
 ![](del_specialization.jpg)
 <br>Pic. 5.8 Delete specialization dialog.
