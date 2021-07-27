@@ -1,0 +1,62 @@
+body {
+    background: url("../images/background.jpg");
+    font-family: "Tahoma";
+}
+/*.ce {*/
+
+/*}*/
+.name_list {
+    text-align: center;
+    color: #a16262;
+    font-size: 30px;
+    width: 1350px;
+    margin: 5px 0px;
+    background-color: #ffeb96;
+    box-shadow: 0 5px 10px #ccc;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    height: 50px; /*sets height of element*/
+    background: #fc9e9e; /*sets the background of this element (here a solid colour)*/
+    padding-left: 20px; /*sets 'padding'*/
+    padding-right: 20px; /*sets 'padding'*/
+    line-height: 50px; /*for this, it sets vertical alignment*/
+    color: #7f2e2e;
+    border-radius: 10%;
+    box-shadow: 0 5px 10px #ccc;
+}
+a:hover {
+    background: #fd4444; /*sets background colour*/
+}
+
+.tabl {
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 5px 10px #ccc;
+    background: #fc9e9e; /*sets the background of this element (here a solid colour)*/
+    border-radius: 10%;
+    margin: 5px auto;
+}
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background: white;
+  max-width: 70%;
+  width: 70%;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  font-weight: normal;
+  color: #003bef;
+  padding: 10px 15px;
+}
+td {
+  color: #8d8de8;
+  border-top: 1px solid #c6acac;
+  padding: 10px 15px;
+}
+tr:hover td {
+  background: #e8edff;
+}
