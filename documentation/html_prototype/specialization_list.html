@@ -7,10 +7,73 @@
 </head>
 
 <body>
-    <div class="name_list">Specialization list</div>
-    <div class="tabl"><a href="index.html">Department</a></div>
-    <div class="tabl"><a href="employee_list.html">Employee</a></div>
-    <div class="tabl"><a href="positions_list.html">Positions</a></div>
-    <a href="specialization_list.html" style="background:#fd4444">Specialization</a>
+    <header class="header">
+        <div class="window">
+            <div class="name_list" id="name_list">Specialization list</div>
+            <div class="header__inner">
+                <nav class="nav">
+                    <a class="nav__link" href="department_list.html">Department</a>
+                    <a class="nav__link" href="employee_list.html">Employee</a>
+                    <a class="nav__link" href="positions_list.html">Positions</a>
+                    <a class="nav__link_active" href="specialization_list.html">Specialization</a>
+                </nav>
+                <nav class="nav_right">
+                    <button class="nav__link_cancel" id="button_cancel" style="display:none" onclick="cancel_btn()">Cancel</button>
+                    <button class="nav__link_add" id="button_save" style="display:none" onclick="proverka()">Save</button>
+                    <button class="nav__link_add" id="button_add" onclick="add_btn()">Add</button>
+                    <button class="nav__link_add" id="button_edit_save" style="display:none" onclick="proverka1()">Save</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="window">
+            <div class="intro_inner">
+                <nav id="add_nav" style="display:none">
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Name: </h3>
+                        <h3 class="h3_1"><input type="text" id="name" placeholder="Name"></h3>
+                    </nav>
+                </nav>
+                <div class="table" id="table_specialization">
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Positions</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Python</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>C#</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Java</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>C++</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/specialization_script.js"></script>
 </body>
 </html>
