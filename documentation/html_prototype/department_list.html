@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="window">
-            <div class="name_list" id="name_list">Employee list</div>
+            <div class="name_list" id="name_list">Department list</div>
             <div class="header__inner">
                 <nav class="nav">
                     <a class="nav__link_active" href="department_list.html">Department</a>
@@ -41,24 +41,28 @@
                     <nav class="table">
                         <table id="add_table1">
                             <tr>
+                                <th></th>
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Date of birth</th>
                                 <th>Department</th>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
                                 <td>1</td>
                                 <td>Ihar Nauros</td>
                                 <td>1993-01-01</td>
                                 <td>Developer</td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
                                 <td>2</td>
                                 <td>Svirydzetski Kanstantsin</td>
                                 <td>1998-05-05</td>
                                 <td>Developer</td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
                                 <td>3</td>
                                 <td>Yauheni Hurynovich</td>
                                 <td>1998-01-01</td>
@@ -66,22 +70,18 @@
                             </tr>
                         </table>
                     </nav>
-                    <nav class="add_nav">
-                        <h3 class="h3_1"></h3>
+                    <nav class="arrow">
+                        <button class="arrow" onclick="tab1_To_tab2()">&dArr;</button>
+                        <button class="arrow" onclick="tab2_To_tab1()">&uArr;</button>
                     </nav>
                     <nav class="table">
                         <table id="add_table2">
                             <tr>
+                                <th></th>
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Date of birth</th>
                                 <th>Department</th>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
                             </tr>
                         </table>
                     </nav>

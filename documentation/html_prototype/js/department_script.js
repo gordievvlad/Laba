@@ -29,7 +29,7 @@ function onAddrow(e) {
     document.getElementById('table_department').style.display = 'block';
     document.getElementById('add_nav').style.display = 'none';
     document.getElementById('button_save').style.display = 'none';
-    document.getElementById("name_list").innerHTML = "Employee list";
+    document.getElementById("name_list").innerHTML = "Department list";
 }
 
 function onDeleteRow(e) {
@@ -138,4 +138,78 @@ function proverka1() {
 
 function clean() {
     document.getElementById('name').value = "";
+}
+
+function tab1_To_tab2() {
+    let table1 = document.getElementById("add_table1");
+    let table2 = document.getElementById("add_table2");
+    let checkboxes = document.getElementsByName("check_tabl1");
+
+
+    for(let i = 0; i < checkboxes.length; i++){
+        if (checkboxes[i].checked) {
+
+            // create new row and cells
+            let newRow = table2.insertRow(table2.length),
+                cell1 = newRow.insertCell(0),
+                cell2 = newRow.insertCell(1),
+                cell3 = newRow.insertCell(2),
+                cell4 = newRow.insertCell(3),
+                cell5 = newRow.insertCell(4);
+
+            // add value to the cells
+            cell1.innerHTML = "<input type='checkbox' name='check_tabl2'>"
+            cell2.innerHTML = table1.rows[i+1].cells[1].innerHTML;
+            cell3.innerHTML = table1.rows[i+1].cells[2].innerHTML;
+            cell4.innerHTML = table1.rows[i+1].cells[3].innerHTML;
+            cell5.innerHTML = table1.rows[i+1].cells[4].innerHTML;
+
+
+            // remove the transfered rows from the first table [table1]
+
+            let index = table1.rows[i+1].rowIndex;
+            table1.deleteRow(index);
+            i--;
+
+            console.log("yes")
+        }
+    }
+
+}
+
+function tab2_To_tab1() {
+    let table1 = document.getElementById("add_table1");
+    let table2 = document.getElementById("add_table2");
+    let checkboxes = document.getElementsByName("check_tabl2");
+
+
+    for(let i = 0; i < checkboxes.length; i++){
+        if (checkboxes[i].checked) {
+
+            // create new row and cells
+            let newRow = table1.insertRow(table1.length),
+                cell1 = newRow.insertCell(0),
+                cell2 = newRow.insertCell(1),
+                cell3 = newRow.insertCell(2),
+                cell4 = newRow.insertCell(3),
+                cell5 = newRow.insertCell(4);
+
+            // add value to the cells
+            cell1.innerHTML = "<input type='checkbox' name='check_tabl1'>"
+            cell2.innerHTML = table2.rows[i+1].cells[1].innerHTML;
+            cell3.innerHTML = table2.rows[i+1].cells[2].innerHTML;
+            cell4.innerHTML = table2.rows[i+1].cells[3].innerHTML;
+            cell5.innerHTML = table2.rows[i+1].cells[4].innerHTML;
+
+
+            // remove the transfered rows from the first table [table1]
+
+            let index = table2.rows[i+1].rowIndex;
+            table2.deleteRow(index);
+            i--;
+
+            console.log("yes")
+        }
+    }
+
 }
