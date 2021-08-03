@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web application</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="window">
+            <div class="name_list" id="name_list">Positions list</div>
+            <div class="header__inner">
+                <nav class="nav">
+                    <a class="nav__link" href="department_list.html">Department</a>
+                    <a class="nav__link" href="employee_list.html">Employee</a>
+                    <a class="nav__link_active" href="positions_list.html">Positions</a>
+                    <a class="nav__link" href="specialization_list.html">Specialization</a>
+                </nav>
+                <nav class="nav_right">
+                    <button class="nav__link_cancel" id="button_cancel" style="display:none" onclick="cancel_btn()">Cancel</button>
+                    <button class="nav__link_add" id="button_save" style="display:none" onclick="proverka()">Save</button>
+                    <button class="nav__link_add" id="button_add" onclick="add_btn()">Add</button>
+                    <button class="nav__link_add" id="button_edit_save" style="display:none" onclick="proverka1()">Save</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="window">
+            <div class="intro_inner">
+                <nav id="add_nav" style="display:none">
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Name: </h3>
+                        <h3 class="h3_1"><input type="text" id="name" placeholder="Name"></h3>
+                    </nav>
+                </nav>
+                <div class="table" id="table_positions">
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Positions</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Senior Software Engineer</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Middle</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Junior</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Student</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/positions_script.js"></script>
+</body>
+</html>

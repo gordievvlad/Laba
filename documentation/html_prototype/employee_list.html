@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web application</title>
+</head>
+<body>
+    <header class="header">
+        <div class="window">
+            <div class="name_list" id="name_list">Employee list</div>
+            <div class="header__inner">
+                <nav class="nav">
+                    <a class="nav__link" href="department_list.html">Department</a>
+                    <a class="nav__link_active" href="employee_list.html">Employee</a>
+                    <a class="nav__link" href="positions_list.html">Positions</a>
+                    <a class="nav__link" href="specialization_list.html">Specialization</a>
+                </nav>
+                <nav class="nav_right">
+                    <button class="nav__link_cancel" id="button_cancel" style="display:none" onclick="cancel_btn()">Cancel</button>
+                    <button class="nav__link_add" id="button_save" style="display:none" onclick="proverka()">Save</button>
+                    <button class="nav__link_add" id="button_add" onclick="add_btn()">Add</button>
+                    <button class="nav__link_add" id="button_edit_save" style="display:none" onclick="proverka1()">Save</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="window">
+            <div class="intro_inner">
+                <div id="head_date">
+                    <h3 class="h3_2">date from:</h3>
+                    <h3 class="h3_2"><input type="date" id="date1"></h3>
+                    <h3 class="h3_2">by:</h3>
+                    <h3 class="h3_2"><input type="date" id="date2"></h3>
+                    <a class="nav__link_add" onclick="searchDate()">↻</a>
+                    <a class="nav__link_cancel" onclick="cleanDate()">╳</a>
+                </div>
+                <nav id="add_nav" style="display:none">
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Name: </h3>
+                        <h3 class="h3_1"><input type="text" id="name" placeholder="Name"></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Date of birth:</h3>
+                        <h3 class="h3_1"><input type="date" id="date"></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Department:</h3>
+                        <h3 class="h3_1"><select class="select_css" id="department">
+                            <option value="" hidden>Department</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Developer">Developer</option>
+                        </select></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Positions:</h3>
+                        <h3 class="h3_1"><select class="select_css" id="positions">
+                            <option value="" hidden>Positions</option>
+                            <option value="Senior Software Engineer">Senior Software Engineer</option>
+                            <option value="Middle">Middle</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Student">Student</option>
+                        </select></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Specialization:</h3>
+                        <h3 class="h3_1"><select class="select_css" id="specialization">
+                            <option value="" hidden>Specialization</option>
+                            <option value="Python">Python</option>
+                            <option value="C#">C#</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                        </select></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Experience: </h3>
+                        <h3 class="h3_1"><input type="text" id="experience" placeholder="5"></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Wages: </h3>
+                        <h3 class="h3_1"><input type="text" id="wages" placeholder="1000"></h3>
+                    </nav>
+                </nav>
+                <div class="table" id="table_employee">
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Date of birth</th>
+                            <th>Department</th>
+                            <th>Positions</th>
+                            <th>Specialization</th>
+                            <th>Experience</th>
+                            <th>Wages</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Ihar Nauros</td>
+                            <td>1993-01-01</td>
+                            <td>Developer</td>
+                            <td>Senior Software Engineer</td>
+                            <td>Python</td>
+                            <td>15</td>
+                            <td>1500</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Svirydzetski Kanstantsin</td>
+                            <td>1998-05-05</td>
+                            <td>Developer</td>
+                            <td>Student</td>
+                            <td>Python</td>
+                            <td>>1</td>
+                            <td>0</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Yauheni Hurynovich</td>
+                            <td>1998-01-01</td>
+                            <td></td>
+                            <td>Student</td>
+                            <td>Python</td>
+                            <td>>1</td>
+                            <td>0</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/employee_script.js"></script>
+</body>
+</html>

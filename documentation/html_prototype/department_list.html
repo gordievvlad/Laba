@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web application</title>
+</head>
+<body>
+    <header class="header">
+        <div class="window">
+            <div class="name_list" id="name_list">Department list</div>
+            <div class="header__inner">
+                <nav class="nav">
+                    <a class="nav__link_active" href="department_list.html">Department</a>
+                    <a class="nav__link" href="employee_list.html">Employee</a>
+                    <a class="nav__link" href="positions_list.html">Positions</a>
+                    <a class="nav__link" href="specialization_list.html">Specialization</a>
+                </nav>
+                <nav class="nav_right">
+                    <button class="nav__link_cancel" id="button_cancel" style="display:none" onclick="cancel_btn()">Cancel</button>
+                    <button class="nav__link_add" id="button_save" style="display:none" onclick="proverka()">Save</button>
+                    <button class="nav__link_add" id="button_add" onclick="add_btn()">Add</button>
+                    <button class="nav__link_add" id="button_edit_save" style="display:none" onclick="proverka1()">Save</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="window">
+            <div class="intro_inner">
+                <nav id="add_nav" style="display:none">
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Name department: </h3>
+                        <h3 class="h3_1"><input type="text" id="name" placeholder="Name"></h3>
+                    </nav>
+                    <nav class="add_nav">
+                        <h3 class="h3_1">Add employee: </h3>
+                    </nav>
+                    <nav class="table">
+                        <table id="add_table1">
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Date of birth</th>
+                                <th>Department</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
+                                <td>1</td>
+                                <td>Ihar Nauros</td>
+                                <td>1993-01-01</td>
+                                <td>Developer</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
+                                <td>2</td>
+                                <td>Svirydzetski Kanstantsin</td>
+                                <td>1998-05-05</td>
+                                <td>Developer</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="check_tabl1"></td>
+                                <td>3</td>
+                                <td>Yauheni Hurynovich</td>
+                                <td>1998-01-01</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </nav>
+                    <nav class="arrow">
+                        <button class="arrow" onclick="tab1_To_tab2()">&dArr;</button>
+                        <button class="arrow" onclick="tab2_To_tab1()">&uArr;</button>
+                    </nav>
+                    <nav class="table">
+                        <table id="add_table2">
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Date of birth</th>
+                                <th>Department</th>
+                            </tr>
+                        </table>
+                    </nav>
+                </nav>
+                <div class="table" id="table_department">
+                    <table id="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Department</th>
+                            <th>Number of employees</th>
+                            <th>The average salary ($)</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Finance</td>
+                            <td>10</td>
+                            <td>800</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Marketing</td>
+                            <td>12</td>
+                            <td>900</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Developer</td>
+                            <td>23</td>
+                            <td>1000</td>
+                            <td><button class="editBtn" onclick="onEditRow()">&#9998;</button></td>
+                            <td><button class="deleteBtn">╳</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/department_script.js"></script>
+</body>
+</html>
