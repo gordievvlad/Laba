@@ -1,6 +1,6 @@
 .idea,__pycache__/
 .idea
-department/README.rst
-department/MANIFEST.in
-department/setup.cfg
+#department/README.rst
+#department/MANIFEST.in
+#department/setup.cfg
 */__pycache__/*
