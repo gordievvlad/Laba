@@ -1,3 +1,4 @@
+[![test Actions Status](https://github.com/Sviridy/laba/workflows/test/badge.svg)](https://github.com/Sviridy/laba/actions)
 <h2 align="center">Web application for managing departments and employees</h2>
 
 <!--TABLE OF CONTENTS-->
