@@ -1,6 +1,6 @@
 name: coveralls
 
-on : ["push", "pull_request"]
+on: [ "push", "pull_request" ]
 
 jobs:
   build:
@@ -17,20 +17,20 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 coveralls pylint Django coverage
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install flake8 coveralls pylint coverage
+          pip install -r requirements.txt
       - name: Lint with flake8
         run: |
           # stop the build if there are Python syntax errors or undefined names
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
       - name: Analysing the code with pylint
         run: |
-          pylint department
+          pylint department --ignore=<file[setup.py, manage.py]>
       - name: Coveralls
         run: |
-          coverage run --source='.' manage.py test department
-          coverage report -m
-          coveralls
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          coverage run --source='.' department/manage.py test department_app
+          coveralls --service=github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
