@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 coveralls pylint Django
+          pip install flake8 coveralls pylint Django coverage
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
         run: |
@@ -30,7 +30,7 @@ jobs:
           pylint department
       - name: Coveralls
         run: |
-          coverage run
+          coverage run --source='.' manage.py test department
           coverage report -m
           coveralls
           github-token: ${{ secrets.GITHUB_TOKEN }}
