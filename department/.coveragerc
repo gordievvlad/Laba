@@ -1,3 +1,4 @@
 [run]
 omit=
-    /Python39/*
+    /lib/Python39/*
+    /lib/python3.9/*
