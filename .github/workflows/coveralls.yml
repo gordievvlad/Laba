@@ -1,4 +1,4 @@
-name: test
+name: coveralls
 
 on : ["push", "pull_request"]
 
@@ -19,7 +19,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 python-coveralls pylint Django
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      #          args = "pip install -r requirements.txt ; pylint **/*.py"
       - name: Lint with flake8
         run: |
           # stop the build if there are Python syntax errors or undefined names
@@ -29,3 +28,7 @@ jobs:
       - name: Analysing the code with pylint
         run: |
           pylint department
+      - name: Coveralls
+        run: |
+          coveralls
+          github-token: ${{ secrets.GITHUB_TOKEN }}
