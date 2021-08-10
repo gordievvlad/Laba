@@ -27,7 +27,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
       - name: Analysing the code with pylint
         run: |
-          pylint department 
+          pylint department --rcfile
       - name: Coveralls
         run: |
           coverage run --source='.' department/manage.py test department_app
