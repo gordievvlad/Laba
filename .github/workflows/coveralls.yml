@@ -22,7 +22,7 @@ jobs:
           pip install -r department/requirements.txt
       - name: Analysing the code with pylint
         run: |
-          pylint department --rcfile
+          pylint department --rcfile .pylintrc
       - name: Coveralls
         run: |
           coverage run --source=department department/manage.py test department_app
