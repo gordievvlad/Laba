@@ -30,6 +30,6 @@ jobs:
           pylint department
       - name: Coveralls
         run: |
-          coverage run --source=mypkg -m pytest tests/
+          coverage run --source
           coveralls
           github-token: ${{ secrets.GITHUB_TOKEN }}
