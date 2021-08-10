@@ -33,5 +33,4 @@ jobs:
           coverage run --source='.' department/manage.py test department_app --rcfile=RCFILE
           coveralls --service=github
         env:
-          COVERAGE_RCFILE
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
