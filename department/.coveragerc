@@ -1,4 +1,3 @@
 [run]
-omit=
-    /lib/Python39/*
-    /lib/python3.9/*
+branch = true
+omit = */tests/*, */migrations/*, */urls.py, */settings/*, */wsgi.py, manage.py, setup.py
