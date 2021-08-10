@@ -31,5 +31,6 @@ jobs:
       - name: Coveralls
         run: |
           coverage run
+          coverage report -m
           coveralls
           github-token: ${{ secrets.GITHUB_TOKEN }}
