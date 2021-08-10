@@ -1,8 +1,11 @@
 [run]
-disable_warnings = TypeError
 branch = true
 omit = */tests/*, */migrations/*, */urls.py, */settings/*, */wsgi.py, manage.py, setup.py
 source = .
 
 [report]
 show_missing = true
+exclude_lines =
+    raise TypeError
+    if 0:
+        if __name__ == .__main__.:
