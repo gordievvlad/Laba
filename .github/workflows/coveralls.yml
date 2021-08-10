@@ -30,6 +30,6 @@ jobs:
           pylint department
       - name: Coveralls
         run: |
-          coverage run --source
+          coverage run
           coveralls
           github-token: ${{ secrets.GITHUB_TOKEN }}
