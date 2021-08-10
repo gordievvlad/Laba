@@ -1,2 +1,3 @@
 [run]
-disable_warnings = no-data-collected
+omit=
+    */unittest/loader.py
