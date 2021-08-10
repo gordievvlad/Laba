@@ -30,7 +30,7 @@ jobs:
           pylint department --rcfile department/.pylintrc
       - name: Coveralls
         run: |
-          coverage run --source='department' department/manage.py test department_app
+#          coverage run --source='department' department/manage.py test department_app
           coveralls --service=github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
