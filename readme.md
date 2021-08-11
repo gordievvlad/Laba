@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/Sviridy/laba/badge.svg)](https://coveralls.io/github/Sviridy/laba)
+[![Coverage Status](https://coveralls.io/repos/github/Sviridy/laba/badge.svg?branch=develop)](https://coveralls.io/github/Sviridy/laba?branch=develop)
 [![build Actions Status](https://github.com/Sviridy/laba/workflows/build/badge.svg)](https://github.com/Sviridy/laba/actions)
 <h2 align="center">Web application for managing departments and employees</h2>
 
