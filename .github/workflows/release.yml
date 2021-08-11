@@ -5,10 +5,11 @@ on:
     branches:
       - master
     tags:
-      - v0.1 # Push events to matching v*, i.e. v1.0, v20.15.10
+      - v0.1.1 # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
   build:
+    if: github.event.pull_request.merged == 'true'
     name: Create Release
     runs-on: ubuntu-latest
     steps:
@@ -20,11 +21,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: v0.1.1
+          release_name: Release v0.1.1
           body: |
-            Changes in this Release
-            - First Change
-            - Second Change
+            Added coveralls and pylint
           draft: false
           prerelease: false
