@@ -1,6 +1,7 @@
 on:
-  push:
-    # Sequence of patterns matched against refs/tags
+  pull_request:
+    types: [closed]
+
     tags:
       - v0.1 # Push events to matching v*, i.e. v1.0, v20.15.10
 
