@@ -8,4 +8,5 @@ class Positions(models.Model):
 
     class Meta:
         """Sorting"""
+        db_table = 'positions'
         ordering = ["id"]

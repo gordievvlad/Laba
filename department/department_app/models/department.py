@@ -10,4 +10,5 @@ class Department(models.Model):
 
     class Meta:
         """Sorting"""
+        db_table = 'department'
         ordering = ["id"]
