@@ -1,22 +1,9 @@
-"""models"""
+"""Employee"""
 from django.db import models
 
-
-class Department(models.Model):
-    """Department"""
-    department = models.CharField(max_length=25)
-    dumber_of_employees = models.IntegerField()
-    the_average_salary = models.IntegerField()
-
-
-class Positions(models.Model):
-    """Positions"""
-    name = models.CharField(max_length=45)
-
-
-class Specialization(models.Model):
-    """Specialization"""
-    name = models.CharField(max_length=45)
+from .department import Department
+from .positions import Positions
+from .specialization import Specialization
 
 
 class Employee(models.Model):
@@ -28,3 +15,7 @@ class Employee(models.Model):
     specialization = models.ForeignKey(Specialization, on_delete=models.SET_NULL, null=True, blank=True)
     experience = models.IntegerField()
     wages = models.IntegerField()
+
+    class Meta:
+        """Sorting"""
+        ordering = ["id"]
