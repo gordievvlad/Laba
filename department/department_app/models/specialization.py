@@ -9,4 +9,3 @@ class Specialization(models.Model):
     class Meta:
         """Sorting"""
         db_table = 'specialization'
-        ordering = ["id"]

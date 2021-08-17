@@ -19,4 +19,3 @@ class Employee(models.Model):
     class Meta:
         """Sorting"""
         db_table = 'employee'
-        ordering = ["id"]
