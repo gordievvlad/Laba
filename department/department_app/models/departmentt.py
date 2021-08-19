@@ -20,8 +20,8 @@ class Department(models.Model):
         summ = wages // countt
         return summ
 
-    number_of_employees = models.IntegerField(default=number_of_employees(), null=True)
-    the_average_salary = models.IntegerField(default=the_average_salary(), null=True)
+    number_of_employees = models.IntegerField(default=number_of_employees, null=True)
+    the_average_salary = models.IntegerField(default=the_average_salary, null=True)
 
     class Meta:
         """Sorting"""
