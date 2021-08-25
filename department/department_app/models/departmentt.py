@@ -8,10 +8,12 @@ class Department(models.Model):
 
     @property
     def number_of_employees(self):
+        """Number of employees"""
         return len(Employee.objects.filter(department=self))
 
     @property
     def the_average_salary(self):
+        """The average salary"""
         wages = 0
         emp = Employee.objects.filter(department=self)
         countt = len(Employee.objects.filter(department=self))
