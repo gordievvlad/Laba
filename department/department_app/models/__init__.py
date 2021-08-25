@@ -1,5 +1,5 @@
 """Models"""
-from departmentt import *
-from employee import *
-from specialization import *
-from positions import *
+from department_app.models.departmentt import Department
+from department_app.models.employee import Employee
+from department_app.models.specialization import Specialization
+from department_app.models.positions import Positions
