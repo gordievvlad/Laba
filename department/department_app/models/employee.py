@@ -1,9 +1,6 @@
 """Employee"""
 from django.db import models
-
-from department_app.models.departmentt import Department
-from department_app.models.positions import Positions
-from department_app.models.specialization import Specialization
+from department_app.models import Department, Positions, Specialization
 
 
 class Employee(models.Model):
