@@ -6,6 +6,7 @@ from .specialization import Specialization
 from .positions import Positions
 
 
+
 class Employee(models.Model):
     """Employee"""
     name = models.CharField(max_length=45)
