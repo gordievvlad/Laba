@@ -24,6 +24,6 @@ jobs:
           tag_name: v0.1.3
           release_name: Release v0.1.3
           body: |
-            Added coveralls and pylint
+            Added DB
           draft: false
           prerelease: false
