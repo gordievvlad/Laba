@@ -8,7 +8,7 @@ from department_app.models import Department, Positions, Specialization
 
 
 class Employee(models.Model):
-    """Employee"""
+    """Employeee"""
     name = models.CharField(max_length=45)
     date_of_birth = models.DateField()
     department = models.ForeignKey(Department, on_delete=models.SET_NULL, null=True, blank=True)
