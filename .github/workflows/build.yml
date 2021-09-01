@@ -23,7 +23,7 @@ jobs:
           pip install -r department/requirements.txt
       - name: Analysing the code with pylint
         run: |
-          pylint --load-plugins=pylint_django --django-settings-module=department.settings department/*
+          pylint --load-plugins=pylint_django --django-settings-module=department department/
       - name: Coveralls
         run: |
           coverage run --source=department department/manage.py test department_app
