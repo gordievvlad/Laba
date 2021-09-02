@@ -23,7 +23,6 @@ jobs:
           pip install -r department/requirements.txt
       - name: Analysing the code with pylint
         run: |
-          os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'department.settings')
           pylint --load-plugins=pylint_django --django-settings-module=department.settings department/*
       - name: Coveralls
         run: |
