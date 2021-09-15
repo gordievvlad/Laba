@@ -4,3 +4,4 @@
 #department/MANIFEST.in
 #department/setup.cfg
 */__pycache__/*
+*.pyc
