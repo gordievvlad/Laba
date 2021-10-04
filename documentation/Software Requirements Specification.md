@@ -1,4 +1,4 @@
-<h2 align="center">Managing departments and employees</h2>
+<h2 align="center">Managing departments and employees</h2
 
 <!--TABLE OF CONTENTS-->
 <details open="open">
